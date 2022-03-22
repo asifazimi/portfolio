@@ -1,0 +1,40 @@
+.contact {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  padding-top: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("/img/model-1.jpg");
+  background-size: cover;
+  background-position: center top;
+
+  .overlay-itro {
+    background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    );
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  h2 {
+    z-index: 1;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &_list {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+  }
+}
